@@ -6,8 +6,10 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"path/filepath"
 
 	"github.com/gin-gonic/gin"
+	"github.com/joho/godotenv"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 
@@ -22,6 +24,19 @@ type Item struct {
 	ProductName string `bson:"product_name" json:"product_name"`
 	Category    string `bson:"category" json:"category"`
 	Location    string `bson:"location" json:"location"`
+}
+
+func init() {
+	// Get the current working directory
+	path_dir, err := os.Getwd()
+	if err != nil {
+		log.Fatalf("Error getting current directory: %v", err)
+	}
+
+	// Load environment variables from the .env file
+	if err := godotenv.Load(filepath.Join(path_dir, ".env")); err != nil {
+		log.Fatalf("Error loading .env file: %v", err)
+	}
 }
 
 func CORSMiddleware() gin.HandlerFunc {
@@ -49,8 +64,7 @@ func main() {
 	router.Use(Middleware.RequestLoggerMiddleware())
 
 	// Get the MongoDB URI from the environment variables
-	// mongoURI := os.Getenv("MONGODB_URI")
-	mongoURI := "mongodb+srv://bsingh_ongraph:test1234@ongraph.bbiowfd.mongodb.net/golang_search"
+	mongoURI := os.Getenv("MONGODB_URI")
 	fmt.Println("MONGODB_URI:", mongoURI) // Print the value of MONGODB_URI
 	if mongoURI == "" {
 		log.Fatal("MONGODB_URI environment variable is not set")
