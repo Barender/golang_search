@@ -1,0 +1,188 @@
+[
+    {
+        "brand_name": "CoffeeCo",
+        "product_name": "Espresso Blend",
+        "category": "coffee",
+        "location": "Los Angeles"
+    },
+    {
+        "brand_name": "CoffeeHaven",
+        "product_name": "Dark Roast",
+        "category": "coffee",
+        "location": "New York"
+    },
+    {
+        "brand_name": "TastyEats",
+        "product_name": "Spaghetti",
+        "category": "food",
+        "location": "Seattle"
+    },
+    {
+        "brand_name": "FlavorfulBites",
+        "product_name": "Pizza",
+        "category": "food",
+        "location": "Dallas"
+    },
+    {
+        "brand_name": "FunToys",
+        "product_name": "Action Figures",
+        "category": "toys",
+        "location": "Miami"
+    },
+    {
+        "brand_name": "KidsEmporium",
+        "product_name": "Board Games",
+        "category": "toys",
+        "location": "Los Angeles"
+    },
+    {
+        "brand_name": "ApplianceMasters",
+        "product_name": "Refrigerator",
+        "category": "appliances",
+        "location": "New York"
+    },
+    {
+        "brand_name": "TechGadgets",
+        "product_name": "Smartphones",
+        "category": "appliances",
+        "location": "Seattle"
+    },
+    {
+        "brand_name": "ComfortLiving",
+        "product_name": "Sofa",
+        "category": "furniture",
+        "location": "Dallas"
+    },
+    {
+        "brand_name": "ModernDecor",
+        "product_name": "Coffee Table",
+        "category": "furniture",
+        "location": "Miami"
+    },
+    {
+        "brand_name": "CafeDelight",
+        "product_name": "Cappuccino",
+        "category": "coffee",
+        "location": "Los Angeles"
+    },
+    {
+        "brand_name": "RoastyBeans",
+        "product_name": "French Roast",
+        "category": "coffee",
+        "location": "New York"
+    },
+    {
+        "brand_name": "DeliciousEats",
+        "product_name": "Burger",
+        "category": "food",
+        "location": "Seattle"
+    },
+    {
+        "brand_name": "HealthyBites",
+        "product_name": "Salad",
+        "category": "food",
+        "location": "Dallas"
+    },
+    {
+        "brand_name": "PlayfulToys",
+        "product_name": "Dolls",
+        "category": "toys",
+        "location": "Miami"
+    },
+    {
+        "brand_name": "ToysRUs",
+        "product_name": "Building Blocks",
+        "category": "toys",
+        "location": "Los Angeles"
+    },
+    {
+        "brand_name": "KitchenWizards",
+        "product_name": "Microwave",
+        "category": "appliances",
+        "location": "New York"
+    },
+    {
+        "brand_name": "ElectroGizmos",
+        "product_name": "Laptop",
+        "category": "appliances",
+        "location": "Seattle"
+    },
+    {
+        "brand_name": "HomeBliss",
+        "product_name": "Bed",
+        "category": "furniture",
+        "location": "Dallas"
+    },
+    {
+        "brand_name": "VintageVibes",
+        "product_name": "Antique Chair",
+        "category": "furniture",
+        "location": "Miami"
+    },
+    {
+        "brand_name": "CoffeeCo",
+        "product_name": "Espresso Blend",
+        "category": "coffee",
+        "location": "Los Angeles"
+    },
+    {
+        "brand_name": "CoffeeHaven",
+        "product_name": "Dark Roast",
+        "category": "coffee",
+        "location": "New York"
+    },
+    {
+        "brand_name": "TastyEats",
+        "product_name": "Spaghetti",
+        "category": "food",
+        "location": "Seattle"
+    },
+    {
+        "brand_name": "FlavorfulBites",
+        "product_name": "Pizza",
+        "category": "food",
+        "location": "Dallas"
+    },
+    {
+        "brand_name": "FunToys",
+        "product_name": "Action Figures",
+        "category": "toys",
+        "location": "Miami"
+    },
+    {
+        "brand_name": "KidsEmporium",
+        "product_name": "Board Games",
+        "category": "toys",
+        "location": "Los Angeles"
+    },
+    {
+        "brand_name": "CoffeeBlend",
+        "product_name": "Light Roast",
+        "category": "coffee",
+        "location": "Chicago"
+    },
+    {
+        "brand_name": "ToysPlanet",
+        "product_name": "Puzzle Games",
+        "category": "toys",
+        "location": "Los Angeles"
+    },
+    {
+        "brand_name": "ElectroDevices",
+        "product_name": "TV",
+        "category": "appliances",
+        "location": "New York"
+    },
+    {
+        "brand_name": "ElegantHomes",
+        "product_name": "Dining Table",
+        "category": "furniture",
+        "location": "Seattle"
+    },
+    {
+        "brand_name": "FoodLovers",
+        "product_name": "Tacos",
+        "category": "food",
+        "location": "Dallas"
+    }
+]
