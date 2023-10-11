@@ -63,8 +63,14 @@ func main() {
 	// Middleware to log network requests
 	router.Use(Middleware.RequestLoggerMiddleware())
 
+	// Get the MongoDB URI from the environment variables
+	mongoURI := os.Getenv("MONGODB_URI")
+	if mongoURI == "" {
+		log.Fatal("MONGODB_URI environment variable is not set")
+	}
+
 	// Connect to MongoDB
-	client, err := Connect.ConnectDB()
+	client, err := Connect.ConnectDB(mongoURI)
 	if err != nil {
 		log.Fatalf("Failed to connect to MongoDB: %v", err)
 	}

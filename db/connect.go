@@ -1,22 +1,25 @@
-package connect
+package Connect
 
 import (
 	"context"
-	"os"
 	"fmt"
+	"os"
 
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
 // ConnectDB connects to MongoDB using the URI from the environment variable
-func ConnectDB() (*mongo.Client, error) {
-	// Get the MongoDB URI from the environment variable
-	uri := os.Getenv("MONGODB_URI")
-	if uri == "" {
-		return nil, fmt.Errorf("MONGODB_URI environment variable not set")
+func ConnectDB(mongoURI string) (*mongo.Client, error) {
+	// If mongoURI is not provided, get it from the environment variable
+	if mongoURI == "" {
+		mongoURI = os.Getenv("MONGODB_URI")
+		if mongoURI == "" {
+			return nil, fmt.Errorf("MONGODB_URI environment variable not set")
+		}
 	}
-	clientOptions := options.Client().ApplyURI(uri)
+
+	clientOptions := options.Client().ApplyURI(mongoURI)
 	client, err := mongo.Connect(context.Background(), clientOptions)
 	if err != nil {
 		return nil, err
@@ -27,9 +30,6 @@ func ConnectDB() (*mongo.Client, error) {
 	if err != nil {
 		return nil, err
 	}
-
-	// Set the database variable
-	// database = client.Database("brand_search")
 
 	return client, nil
 }
