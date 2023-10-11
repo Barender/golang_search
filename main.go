@@ -6,6 +6,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"path/filepath"
 
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
@@ -26,8 +27,14 @@ type Item struct {
 }
 
 func init() {
+	// Get the current working directory
+	path_dir, err := os.Getwd()
+	if err != nil {
+		log.Fatalf("Error getting current directory: %v", err)
+	}
+
 	// Load environment variables from the .env file
-	if err := godotenv.Load(); err != nil {
+	if err := godotenv.Load(filepath.Join(path_dir, ".env")); err != nil {
 		log.Fatalf("Error loading .env file: %v", err)
 	}
 }
