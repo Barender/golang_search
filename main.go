@@ -65,6 +65,7 @@ func main() {
 
 	// Get the MongoDB URI from the environment variables
 	mongoURI := os.Getenv("MONGODB_URI")
+	fmt.Println("MONGODB_URI:", mongoURI) // Print the value of MONGODB_URI
 	if mongoURI == "" {
 		log.Fatal("MONGODB_URI environment variable is not set")
 	}
